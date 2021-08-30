@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
   /* font-family: "Chewy", cursive; */
   background: #f8f5f5;
 }
@@ -60,7 +61,7 @@ header {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   body {
     overflow-x: hidden;
   }
@@ -151,14 +152,11 @@ header {
 
 main {
   margin-top: -26em;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
   border: 3px solid black;
 }
@@ -167,7 +165,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   gap: 0.8rem;
 }
 
@@ -178,31 +176,31 @@ img {
 }
 
 .container {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .container-head {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-size: 25px;
   font-family: "Playfair Display", serif;
 }
 
-.all-projects-el {
+.ul-projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-items: center;
   gap: 1rem;
-  padding-top: 1rem;
+  box-sizing: inherit;
+  margin-left: 2.5em;
+  margin-top: 1em;
 }
 
 .projects-el {
-  width: 120px;
-  height: 140px;
+  width: 180px;
+  height: 150px;
   border: 2px solid black;
   border-radius: 10px;
 }
@@ -225,26 +223,15 @@ h4 {
   font-family: "Playfair Display", serif;
 }
 
-@media screen and (max-width: 768px) {
-  .grid {
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 1000px) {
+  main {
+    margin-top: 1em;
+    overflow-x: hidden;
   }
 
   img {
     max-width: 200px;
     max-height: 200px;
-  }
-
-  .all-projects-el {
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  main {
-    margin-top: 1em;
   }
 }
 
